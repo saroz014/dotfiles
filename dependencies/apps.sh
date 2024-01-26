@@ -2,7 +2,7 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
-apt_apps=(curl git zsh terminator xclip qbittorrent)
+apt_apps=(curl git zsh terminator xclip qbittorrent ca-certificates gnupg)
 snap_apps=(pycharm-community code vlc)
 
 install_apps() {
@@ -10,9 +10,9 @@ install_apps() {
 
   for app in "${@:2}"; do
     if ! command -v "$app" &> /dev/null; then
-      echo "$app not found in the system"
-      echo "Installing $app using $package_manager"
-      sudo "${1}" install "$app" -y
+      echo "Installing $app"
+      sudo "${package_manager}" install "$app" -y
+      echo "$app installed successfully"
     fi
   done
 }
