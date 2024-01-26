@@ -12,5 +12,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 
 # set zsh as the default shell
 chsh -s "$(which zsh)"
-source "$HOME"/.zshrc
 echo "Zsh installed successfully"

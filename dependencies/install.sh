@@ -2,8 +2,8 @@
 
 set -e
 
-source apps.sh
-source chrome.sh
-source docker.sh
-source pyenv.sh
-source zsh.sh
+source ./dependencies/apps.sh
+source ./dependencies/chrome.sh
+source ./dependencies/docker.sh
+source ./dependencies/pyenv.sh
+source ./dependencies/zsh.sh

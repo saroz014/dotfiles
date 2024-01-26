@@ -18,7 +18,6 @@ echo "Docker installed successfully"
 
 # Manage docker as a non-root user
 echo "Managing docker as a non-root user"
-sudo groupadd docker
+sudo groupadd docker || true
 sudo usermod -aG docker "$USER"
-newgrp docker
 echo "Docker can be used now without prefacing the docker command with sudo"
