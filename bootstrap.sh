@@ -21,7 +21,9 @@ sudo groupadd docker
 sudo usermod -aG docker "$USER"
 newgrp docker
 
-# TODO: install dotfiles
+# install dotfiles
+cp .zshrc "${HOME}"
+cp .gitconfig "${HOME}"
 
 # set zsh as default shell
 chsh -s "$(which zsh)"
