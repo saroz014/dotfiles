@@ -10,9 +10,9 @@ install_apps() {
 
   for app in "${@:2}"; do
     if ! command -v "$app" &> /dev/null; then
-      echo "Installing $app"
+      echo -e "\e[32mInstalling $app\e[0m"
       sudo "${package_manager}" install "$app" -y
-      echo "$app installed successfully"
+      echo -e "\e[32m$app installed successfully\e[0m"
     fi
   done
 }

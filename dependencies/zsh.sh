@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # download and install ohmyzsh (ohmyzsh is a framework that adds a ton of useful functionalities to zsh)
-echo "Installing zsh"
+echo -e "\e[32mInstalling zsh\e[0m"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # download zsh-autosuggestions
@@ -12,4 +12,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 
 # set zsh as the default shell
 chsh -s "$(which zsh)"
-echo "Zsh installed successfully"
+echo -e "\e[32mZsh installed successfully\e[0m"
