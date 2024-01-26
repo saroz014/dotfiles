@@ -9,7 +9,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 # download zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
-# set zsh as the default shell
-chsh -s "$(which zsh)"
 echo -e "\e[32mZsh installed successfully\e[0m"

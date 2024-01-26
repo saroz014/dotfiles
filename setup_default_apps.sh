@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-echo -e "\e[32mRun source ~/.zshrc to refresh the contents of the zshrc file\e[0m"
 # Set Google Chrome as the default browser
 echo -e "\e[32mSetting chrome as the default browser\e[0m"
 sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
@@ -19,3 +18,8 @@ echo -e "\e[32mSetting qbittorrent as the default torrent app\e[0m"
 xdg-mime default org.qbittorrent.qBittorrent.desktop x-scheme-handler/magnet
 xdg-mime default org.qbittorrent.qBittorrent.desktop application/x-bittorrent
 echo -e "\e[32mQbittorrent is now the default torrent app\e[0m"
+
+# set zsh as the default shell
+echo -e "\e[32mSetting zsh as the default shell\e[0m"
+chsh -s "$(which zsh)"
+echo -e "\e[32mZsh is now the default shell\e[0m"
